@@ -1,0 +1,211 @@
+complaint_text,category,department,priority
+Hostel room fan is not working since yesterday,Hostel,Hostel Office,Medium
+Water supply in hostel block B is irregular,Hostel,Hostel Office,High
+Hostel bathroom lights are not functioning,Hostel,Hostel Office,Medium
+Room cleaning service is not coming regularly,Hostel,Hostel Office,Low
+Hot water supply stopped working in hostel,Hostel,Hostel Office,High
+Hostel WiFi connection is very slow,Hostel,Hostel Office,Medium
+Bed sheets not changed for two weeks in hostel,Hostel,Hostel Office,Low
+Common room TV is not working in boys hostel,Hostel,Hostel Office,Low
+Study table in hostel room is broken,Hostel,Hostel Office,Low
+Hostel washing machine is out of order,Hostel,Hostel Office,Medium
+Power cuts happening frequently in hostel,Hostel,Hostel Office,High
+Hostel security not checking visitors properly,Hostel,Hostel Office,Medium
+Drinking water cooler not working in hostel,Hostel,Hostel Office,High
+Hostel notice board information is outdated,Hostel,Hostel Office,Low
+Locker in hostel room cannot be locked,Hostel,Hostel Office,Medium
+Mosquito problem is very serious in the hostel rooms,Hostel,Hostel Office,Medium
+The hostel gate is closed too early in the evening,Hostel,Hostel Office,Low
+Garbage is not being cleared near the hostel entrance,Hostel,Hostel Office,Medium
+The hostel food serving area is overcrowded and unmanaged,Hostel,Hostel Office,Medium
+There is a foul smell coming from the hostel drainage,Hostel,Hostel Office,High
+My roommate is creating disturbance at night,Hostel,Hostel Office,Low
+The hostel lift is not working for the past two days,Hostel,Hostel Office,High
+Ceiling plaster is falling in the hostel corridor,Hostel,Hostel Office,High
+The hostel inverter backup is not available during power cuts,Hostel,Hostel Office,Medium
+The hostel medical room is locked most of the time,Hostel,Hostel Office,Medium
+There is no proper ventilation in my hostel room,Hostel,Hostel Office,Medium
+Hostel entrance lights are not switched on at night,Hostel,Hostel Office,High
+The hostel complaint register is missing from the office,Hostel,Hostel Office,Low
+The room door hinge is broken in my hostel room,Hostel,Hostel Office,Medium
+The hostel water heater trips the power frequently,Hostel,Hostel Office,High
+College bus is always late by 30 minutes,Transport,Transport Office,High
+Bus route for our area was cancelled suddenly,Transport,Transport Office,High
+Bus driver is driving recklessly,Transport,Transport Office,High
+No bus service on weekends for day scholars,Transport,Transport Office,Medium
+Bus AC is not working in summer months,Transport,Transport Office,Medium
+Bus seat allocation not followed properly,Transport,Transport Office,Low
+Bus breaks down frequently on highway,Transport,Transport Office,High
+No standby bus when main bus breaks down,Transport,Transport Office,High
+Bus conductor not issuing proper tickets,Transport,Transport Office,Medium
+Pickup point timing changed without notice,Transport,Transport Office,Medium
+The evening bus is overcrowded and unsafe,Transport,Transport Office,High
+Students are forced to stand for the whole journey in the bus,Transport,Transport Office,High
+The bus skipped my stop without informing anyone,Transport,Transport Office,Medium
+There is no transport available for special lab hours,Transport,Transport Office,Medium
+The bus horn is not working properly,Transport,Transport Office,Low
+Our route bus reaches college after first hour starts,Transport,Transport Office,High
+The driver uses mobile phone while driving,Transport,Transport Office,High
+The bus windows are broken and not repaired,Transport,Transport Office,Medium
+The route number display is missing in the bus,Transport,Transport Office,Low
+Transport fee receipt has not been issued yet,Transport,Transport Office,Medium
+The bus for our area was merged with another route causing delays,Transport,Transport Office,Medium
+There is no proper lighting inside the bus during evening travel,Transport,Transport Office,Medium
+The bus cleaner is not maintaining cleanliness,Transport,Transport Office,Low
+Students are not informed when transport schedules change,Transport,Transport Office,Medium
+The bus tyre condition looks unsafe,Transport,Transport Office,High
+The morning bus reaches the pickup point too early,Transport,Transport Office,Medium
+There is no GPS tracking for the college buses,Transport,Transport Office,Low
+Rainwater leaks into the bus during travel,Transport,Transport Office,Medium
+The transport helpline is not responding to complaints,Transport,Transport Office,Medium
+Parents are not informed when buses are delayed heavily,Transport,Transport Office,Medium
+Internal marks entered incorrectly in portal,Academics,Academic Section,High
+Attendance marked absent when I was present,Academics,Academic Section,High
+Exam timetable has clash for two subjects,Academics,Academic Section,High
+Lab practical marks not uploaded,Academics,Academic Section,High
+Project guide changed without information,Academics,Academic Section,Medium
+Class teacher not responding to email regarding marks,Academics,Academic Section,Medium
+Assignment marks delayed by one month,Academics,Academic Section,Medium
+Question paper was different from syllabus topics,Academics,Academic Section,High
+Faculty taking extra classes without notice,Academics,Academic Section,Low
+Grade card shows wrong semester marks,Academics,Academic Section,High
+Syllabus completion certificate not issued,Academics,Academic Section,Medium
+The subject timetable was changed without prior intimation,Academics,Academic Section,Medium
+Lab sessions are too short to complete experiments,Academics,Academic Section,Low
+The seminar marks are not visible in the portal,Academics,Academic Section,Medium
+Exam hall allocation was updated at the last minute,Academics,Academic Section,Medium
+Notes for one subject were not uploaded by faculty,Academics,Academic Section,Low
+Faculty cancelled classes repeatedly without makeup sessions,Academics,Academic Section,Medium
+The department has not assigned a guide for my mini project,Academics,Academic Section,High
+The internal assessment schedule overlaps with another event,Academics,Academic Section,Medium
+The hall ticket is not generated for my registration number,Academics,Academic Section,High
+Course outcomes are not explained clearly for our subject,Academics,Academic Section,Low
+One elective subject has very limited seats and no update is given,Academics,Academic Section,Medium
+Lab records were evaluated unfairly,Academics,Academic Section,Medium
+My revaluation result is still not published,Academics,Academic Section,High
+Practical exam instructions were not communicated properly,Academics,Academic Section,Medium
+The academic calendar was updated late,Academics,Academic Section,Low
+My name is missing from the class attendance sheet,Academics,Academic Section,High
+Department circulars are not reaching all students,Academics,Academic Section,Low
+The faculty entered the wrong subject code for attendance,Academics,Academic Section,High
+The online class link was not shared on time,Academics,Academic Section,Medium
+Food quality in canteen is very poor,Canteen,Canteen Management,High
+Canteen charging extra money for meals,Canteen,Canteen Management,High
+Canteen not serving water with food,Canteen,Canteen Management,Medium
+Canteen hygiene standards are very low,Canteen,Canteen Management,High
+No vegetarian option available in canteen,Canteen,Canteen Management,Medium
+Canteen bill not matching actual order,Canteen,Canteen Management,Medium
+Canteen closes too early during lunch time,Canteen,Canteen Management,Low
+Canteen staff behavior is rude,Canteen,Canteen Management,Medium
+No change given properly in canteen,Canteen,Canteen Management,Low
+Canteen menu changed without notice,Canteen,Canteen Management,Low
+Canteen not accepting digital payments,Canteen,Canteen Management,Medium
+Tea served in canteen is cold every morning,Canteen,Canteen Management,Low
+Food is often served with very little quantity,Canteen,Canteen Management,Medium
+There are flies around the food counter,Canteen,Canteen Management,High
+Snacks are overpriced compared to the menu board,Canteen,Canteen Management,Medium
+Students wait too long to receive food orders,Canteen,Canteen Management,Medium
+Dining tables are not cleaned regularly,Canteen,Canteen Management,Medium
+Milk quality in tea and coffee is poor,Canteen,Canteen Management,Low
+The canteen token system is not managed properly,Canteen,Canteen Management,Medium
+Disposable cups are not available in the juice section,Canteen,Canteen Management,Low
+The same food items are repeated every day,Canteen,Canteen Management,Low
+No proper waste bins are placed near the canteen,Canteen,Canteen Management,Medium
+Cold drinks are sold above printed price,Canteen,Canteen Management,Medium
+Breakfast is not available on time for first hour students,Canteen,Canteen Management,Medium
+The parcel counter service is very slow,Canteen,Canteen Management,Low
+Some food items smell stale by afternoon,Canteen,Canteen Management,High
+There is no proper handwashing facility near the canteen,Canteen,Canteen Management,Medium
+The canteen floor is slippery and unsafe,Canteen,Canteen Management,High
+The food coupon counter is crowded and unorganized,Canteen,Canteen Management,Medium
+The canteen seating area is insufficient during break time,Canteen,Canteen Management,Low
+Classroom projector not working properly,Facilities,Maintenance Department,Medium
+Water leakage from classroom ceiling,Facilities,Maintenance Department,High
+Classroom benches are broken and unsafe,Facilities,Maintenance Department,High
+Library AC not working in reading room,Facilities,Maintenance Department,Medium
+Sports ground lighting not functional,Facilities,Maintenance Department,Medium
+Washroom taps leaking continuously,Facilities,Maintenance Department,Medium
+Seminar hall microphone not working,Facilities,Maintenance Department,High
+Notice boards not updated regularly,Facilities,Maintenance Department,Low
+Parking area water logging issue,Facilities,Maintenance Department,High
+The classroom fans are rotating very slowly,Facilities,Maintenance Department,Medium
+Lab chairs are damaged and uncomfortable,Facilities,Maintenance Department,Medium
+The generator backup is not available during power failure,Facilities,Maintenance Department,High
+The campus garden sprinklers are wasting water,Facilities,Maintenance Department,Low
+Staircase lights are not working in one block,Facilities,Maintenance Department,High
+The library door is difficult to open and close,Facilities,Maintenance Department,Medium
+The elevator in the admin block is not functioning,Facilities,Maintenance Department,High
+The water purifier near the library is not working,Facilities,Maintenance Department,High
+The washroom flush system is damaged,Facilities,Maintenance Department,Medium
+Broken glass panel in the corridor is unsafe,Facilities,Maintenance Department,High
+The classroom whiteboard is damaged and unreadable,Facilities,Maintenance Department,Medium
+The lab power sockets are loose and unsafe,Facilities,Maintenance Department,High
+Dustbins are overflowing near the main block,Facilities,Maintenance Department,Medium
+The campus pathway tiles are uneven and risky,Facilities,Maintenance Department,Medium
+The seminar hall air conditioning is too weak,Facilities,Maintenance Department,Medium
+There is no drinking water near the sports complex,Facilities,Maintenance Department,Medium
+The classroom doors make loud noise when opened,Facilities,Maintenance Department,Low
+The library shelves are damaged,Facilities,Maintenance Department,Medium
+The electrical switchboard in class is broken,Facilities,Maintenance Department,High
+The rooftop rainwater outlet is blocked,Facilities,Maintenance Department,High
+The auditorium curtain mechanism is not working,Facilities,Maintenance Department,Medium
+Bonafide certificate request pending for 15 days,Administration,Admin Office,Medium
+Scholarship status not updated online,Administration,Admin Office,High
+ID card printing delayed by two months,Administration,Admin Office,High
+Fee receipt not generated properly,Administration,Admin Office,Medium
+Library membership renewal not processed,Administration,Admin Office,Low
+Transport pass not issued on time,Administration,Admin Office,Medium
+Hostel fee adjustment not processed,Administration,Admin Office,Medium
+Medical certificate verification delayed,Administration,Admin Office,Medium
+College leaving certificate is not ready,Administration,Admin Office,High
+No response from office regarding duplicate mark sheet,Administration,Admin Office,High
+Migration certificate request is pending,Administration,Admin Office,Medium
+The office entered the wrong spelling in my name record,Administration,Admin Office,High
+Exam application payment is shown as failed despite deduction,Administration,Admin Office,High
+My student profile is not updated in the ERP,Administration,Admin Office,Medium
+Fee concession request has not been reviewed,Administration,Admin Office,Medium
+The office is asking for already submitted documents again,Administration,Admin Office,Low
+There is no clear token system in the admin office,Administration,Admin Office,Low
+The office closes before all students are served,Administration,Admin Office,Medium
+No one is answering calls from the administration office,Administration,Admin Office,Medium
+The certificate collection process is too slow,Administration,Admin Office,Medium
+My transfer certificate application has no status update,Administration,Admin Office,High
+The office lost one of my submitted forms,Administration,Admin Office,High
+The student section has not updated my community certificate details,Administration,Admin Office,Medium
+My semester registration has not been approved by the office,Administration,Admin Office,High
+I did not receive the official fee structure copy,Administration,Admin Office,Low
+Office staff redirected me multiple times without resolving the issue,Administration,Admin Office,Medium
+The admin portal shows wrong personal information,Administration,Admin Office,Medium
+The office did not issue my study certificate on time,Administration,Admin Office,High
+No clear instructions were given for document submission dates,Administration,Admin Office,Low
+Reimbursement form acknowledgement has not been provided,Administration,Admin Office,Medium
+WiFi is not working in computer lab,IT Support,IT Helpdesk,High
+Student portal login credentials are not working,IT Support,IT Helpdesk,High
+Lab computer systems are hanging frequently,IT Support,IT Helpdesk,High
+Printer not working in library section,IT Support,IT Helpdesk,Medium
+Smart classroom board is not responding,IT Support,IT Helpdesk,Medium
+Email account activation delayed,IT Support,IT Helpdesk,Medium
+Projector remote control not working,IT Support,IT Helpdesk,Low
+College website login issues continue,IT Support,IT Helpdesk,Medium
+The ERP portal is loading very slowly,IT Support,IT Helpdesk,Medium
+The lab systems are not detecting USB devices,IT Support,IT Helpdesk,Medium
+LAN connection is down in the networking lab,IT Support,IT Helpdesk,High
+Antivirus software is not updated on lab computers,IT Support,IT Helpdesk,Medium
+The smart attendance device is not syncing data,IT Support,IT Helpdesk,High
+The online exam browser is crashing repeatedly,IT Support,IT Helpdesk,High
+The computer lab mouse devices are not working,IT Support,IT Helpdesk,Low
+The department printer is showing paper jam constantly,IT Support,IT Helpdesk,Medium
+Forgot password option in portal is not functioning,IT Support,IT Helpdesk,Medium
+The seminar hall audio system cannot connect to laptop,IT Support,IT Helpdesk,Medium
+The WiFi password was changed without notice,IT Support,IT Helpdesk,Low
+The lab computers restart automatically during use,IT Support,IT Helpdesk,High
+The college app is not opening on Android phones,IT Support,IT Helpdesk,Medium
+The online payment page freezes during transaction,IT Support,IT Helpdesk,High
+The firewall is blocking access to required academic websites,IT Support,IT Helpdesk,Medium
+The CCTV monitor system in the control room is blank,IT Support,IT Helpdesk,High
+The biometric attendance system is offline,IT Support,IT Helpdesk,High
+The student portal dashboard is showing incomplete data,IT Support,IT Helpdesk,Medium
+The desktop speakers in the multimedia lab are not working,IT Support,IT Helpdesk,Low
+The classroom projector cannot connect through HDMI,IT Support,IT Helpdesk,Medium
+The campus mobile app notifications are not arriving,IT Support,IT Helpdesk,Low
+The server connection for lab software license is failing,IT Support,IT Helpdesk,High
