@@ -1,0 +1,32 @@
+[
+  {
+    "id": "hostel",
+    "name": "Hostel",
+    "description": "Rooms, mess, warden issues"
+  },
+  {
+    "id": "exam",
+    "name": "Examination",
+    "description": "Results, hall tickets, revaluation"
+  },
+  {
+    "id": "fees",
+    "name": "Fees",
+    "description": "Payments, receipts, scholarships"
+  },
+  {
+    "id": "library",
+    "name": "Library",
+    "description": "Books, journals, reading rooms"
+  },
+  {
+    "id": "it",
+    "name": "IT Services",
+    "description": "Wi-Fi, labs, student portal"
+  },
+  {
+    "id": "academics",
+    "name": "Academics",
+    "description": "Classes, timetable, faculty"
+  }
+]

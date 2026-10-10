@@ -1,0 +1,74 @@
+[
+  {
+    "id": "u1",
+    "name": "Admin",
+    "email": "admin@college.edu",
+    "password_hash": "3a4e05dd600151ad$a75aa43f0fd0d19140ac592780025be2d35ee4f8e4797402c2eb300f9ca1ae90",
+    "role": "admin",
+    "department": null
+  },
+  {
+    "id": "u2",
+    "name": "Hostel Staff",
+    "email": "hostel@college.edu",
+    "password_hash": "3a4e05dd600151ad$a75aa43f0fd0d19140ac592780025be2d35ee4f8e4797402c2eb300f9ca1ae90",
+    "role": "staff",
+    "department": "hostel"
+  },
+  {
+    "id": "u3",
+    "name": "Examination Staff",
+    "email": "exam@college.edu",
+    "password_hash": "3a4e05dd600151ad$a75aa43f0fd0d19140ac592780025be2d35ee4f8e4797402c2eb300f9ca1ae90",
+    "role": "staff",
+    "department": "exam"
+  },
+  {
+    "id": "u4",
+    "name": "Fees Staff",
+    "email": "fees@college.edu",
+    "password_hash": "3a4e05dd600151ad$a75aa43f0fd0d19140ac592780025be2d35ee4f8e4797402c2eb300f9ca1ae90",
+    "role": "staff",
+    "department": "fees"
+  },
+  {
+    "id": "u5",
+    "name": "Library Staff",
+    "email": "library@college.edu",
+    "password_hash": "3a4e05dd600151ad$a75aa43f0fd0d19140ac592780025be2d35ee4f8e4797402c2eb300f9ca1ae90",
+    "role": "staff",
+    "department": "library"
+  },
+  {
+    "id": "u6",
+    "name": "IT Services Staff",
+    "email": "it@college.edu",
+    "password_hash": "3a4e05dd600151ad$a75aa43f0fd0d19140ac592780025be2d35ee4f8e4797402c2eb300f9ca1ae90",
+    "role": "staff",
+    "department": "it"
+  },
+  {
+    "id": "u7",
+    "name": "Academics Staff",
+    "email": "academics@college.edu",
+    "password_hash": "3a4e05dd600151ad$a75aa43f0fd0d19140ac592780025be2d35ee4f8e4797402c2eb300f9ca1ae90",
+    "role": "staff",
+    "department": "academics"
+  },
+  {
+    "id": "u8",
+    "name": "Asha Rao",
+    "email": "asha@college.edu",
+    "password_hash": "3a4e05dd600151ad$a75aa43f0fd0d19140ac592780025be2d35ee4f8e4797402c2eb300f9ca1ae90",
+    "role": "student",
+    "department": null
+  },
+  {
+    "id": "u9",
+    "name": "Ravi Kumar",
+    "email": "ravi@college.edu",
+    "password_hash": "3a4e05dd600151ad$a75aa43f0fd0d19140ac592780025be2d35ee4f8e4797402c2eb300f9ca1ae90",
+    "role": "student",
+    "department": null
+  }
+]

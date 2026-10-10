@@ -1,0 +1,9 @@
+/* Home page only (Module 1) */
+.hero { display: grid; gap: var(--space-3); align-items: start; padding: var(--space-3) 0 var(--space-4); }
+@media (min-width: 960px) { .hero { grid-template-columns: 1.1fr 1fr; } }
+.demo { border-left: 6px solid var(--highlight); }
+.steps { list-style: none; padding: 0; margin: 0; }
+.faq-btn { font: inherit; font-weight: 700; background: none; border: 0; padding: 0; cursor: pointer; color: var(--ink); text-align: left; width: 100%; }
+.faq-btn::after { content: "+"; float: right; }
+.faq-btn[aria-expanded="true"]::after { content: "\2212"; }
+.faq .card p { margin: var(--space-1) 0 0; }

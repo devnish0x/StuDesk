@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in - StuDesk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header id="site-header"></header>
+
+  <main id="main" tabindex="-1">
+    <h1 id="form-title">Log in</h1>
+
+    <form class="form card" id="auth-form" novalidate aria-labelledby="form-title">
+      <div class="field" id="name-field" hidden>
+        <label for="name">Full name</label>
+        <input type="text" id="name" autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" autocomplete="current-password" required aria-describedby="pw-hint">
+        <p class="hint" id="pw-hint">At least 6 characters.</p>
+      </div>
+      <p class="error-text" id="form-error" role="alert"></p>
+      <button class="btn" type="submit" id="submit-btn">Log in</button>
+      <p>
+        <span id="switch-text">New here?</span>
+        <button class="btn btn-outline" type="button" id="switch-btn">Create a student account</button>
+      </p>
+      <p class="hint">Demo logins (password studesk123): asha@college.edu, it@college.edu, admin@college.edu</p>
+    </form>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="/static/js/common.js"></script>
+  <script src="/static/js/pages/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "f1",
+    "user_id": "u8",
+    "anonymous": false,
+    "type": "suggestion",
+    "category": "library",
+    "title": "Extend library hours during exams",
+    "message": "Please keep the library open until 10 PM in exam weeks.",
+    "rating": null,
+    "status": "new",
+    "admin_reply": null,
+    "created_at": "2026-10-08T11:20:00",
+    "updated_at": "2026-10-08T11:20:00"
+  },
+  {
+    "id": "f2",
+    "user_id": "u9",
+    "anonymous": true,
+    "type": "feedback",
+    "category": "canteen",
+    "title": "Food quality has improved",
+    "message": "The new menu is much better. Thank you!",
+    "rating": 5,
+    "status": "reviewed",
+    "admin_reply": "Thanks, we've shared this with the canteen team.",
+    "created_at": "2026-10-07T13:05:00",
+    "updated_at": "2026-10-08T09:00:00"
+  }
+]

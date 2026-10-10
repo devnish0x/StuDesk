@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StuDesk - complaints and feedback for our campus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/pages/index.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header id="site-header"></header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <h1 id="hero-title">Tell us what's wrong. We'll send it to the right desk.</h1>
+        <p>StuDesk reads your complaint, suggests the department that should handle it, and lets you follow it until it's fixed. Got an idea instead? Send feedback or a suggestion.</p>
+      </div>
+
+      <!-- The memorable part of the home page: a live demo of the ML model -->
+      <form class="card demo" id="demo-form" aria-labelledby="demo-title">
+        <h2 id="demo-title">Try the router</h2>
+        <div class="field">
+          <label for="demo-text">Describe a problem</label>
+          <textarea id="demo-text" required minlength="3" placeholder="e.g. The Wi-Fi in the computer lab is very slow"></textarea>
+        </div>
+        <button class="btn" type="submit">Find the department</button>
+        <p id="demo-result" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section aria-labelledby="how-title" class="stack">
+      <h2 id="how-title">How it works</h2>
+      <ol class="grid steps">
+        <li class="card"><h3>Write it down</h3><p>Describe the problem in your own words.</p></li>
+        <li class="card"><h3>We route it</h3><p>The model suggests a department. You can change it.</p></li>
+        <li class="card"><h3>Track it</h3><p>See replies and status updates on My complaints.</p></li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="faq-title" class="stack faq">
+      <h2 id="faq-title">Questions students ask</h2>
+      <div class="card">
+        <h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq1">Is my feedback anonymous?</button></h3>
+        <p id="faq1" hidden>Yes, if you tick the anonymous box. Admins won't see your name, but you can still find your own submissions.</p>
+      </div>
+      <div class="card">
+        <h3><button class="faq-btn" type="button" aria-expanded="false" aria-controls="faq2">What if the department is wrong?</button></h3>
+        <p id="faq2" hidden>Staff can re-route your complaint to the right desk, so you don't need to submit it again.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="/static/js/common.js"></script>
+  <script src="/static/js/pages/index.js"></script>
+</body>
+</html>
