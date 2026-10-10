@@ -1,9 +1,0 @@
-timestamp,complaint_text,predicted_category,department,confidence,model_version
-2026-05-12T12:51:41.941488,string,Academics,Academic Section,1.0,v1.0
-2026-05-12T12:58:27.148426,fan is not working properly in the lab,IT Support,IT Helpdesk,1.0,v1.0
-2026-05-12T12:58:46.287616,AC is not working properly in lab,IT Support,IT Helpdesk,1.0,v1.0
-2026-10-05T16:57:48.277970,hii,Academics,Academic Section,1.0,v1.0
-2026-10-05T16:58:34.651070,water no goof,Facilities,Maintenance Department,1.0,v1.0
-2026-10-05T16:58:53.173278,water not working,Facilities,Maintenance Department,1.0,v1.0
-2026-10-05T16:58:56.947429,water not working,Facilities,Maintenance Department,1.0,v1.0
-2026-10-05T16:59:02.758998,water not working,Facilities,Maintenance Department,1.0,v1.0
