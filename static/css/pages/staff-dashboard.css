@@ -1,0 +1,13 @@
+/* staff-dashboard.css - Department Dashboard page only */
+
+/* status filter and search box side by side (stacked on phones) */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.filter-bar .field { min-width: 12rem; flex: 1; max-width: 20rem; }
+
+#summary { color: var(--muted); }
+td { overflow-wrap: anywhere; }

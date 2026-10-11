@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New complaint - StuDesk</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="/static/css/common.css">
+  <link rel="stylesheet" href="/static/css/pages/submit.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <nav class="navbar">
+      <a class="brand" href="/">StuDesk</a>
+      <ul>
+        <li><a class="active" href="/submit.html">New complaint</a></li>
+        <li><a href="/my-complaints.html">My complaints</a></li>
+        <li><a href="/feedback.html">Feedback</a></li>
+        <li><a href="/login.html" onclick="logout()">Log out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>New complaint</h1>
+    <p>Describe the problem. Click "Suggest department" to let StuDesk choose, and change it if you disagree.</p>
+
+    <form id="complaint-form" class="form card">
+      <div class="field">
+        <label for="title">Title</label>
+        <input type="text" id="title" required minlength="3" maxlength="120">
+      </div>
+      <div class="field">
+        <label for="description">What happened?</label>
+        <textarea id="description" required minlength="10"></textarea>
+      </div>
+      <div class="field">
+        <label for="department">Department</label>
+        <select id="department">
+          <option value="">Not sure - let StuDesk decide</option>
+        </select>
+        <p id="suggest-result" class="message suggestion"></p>
+      </div>
+      <div class="inline">
+        <button class="btn btn-outline" type="button" id="suggest-btn">Suggest department</button>
+        <button class="btn" type="submit">Submit complaint</button>
+      </div>
+      <p id="form-message" class="message"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>StuDesk: complaints and feedback for our campus. MCA Web Technology mini project.</p>
+  </footer>
+
+  <script src="/static/js/common.js"></script>
+  <script src="/static/js/pages/submit.js"></script>
+</body>
+</html>

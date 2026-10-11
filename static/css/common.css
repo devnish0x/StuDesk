@@ -1,0 +1,147 @@
+/* ==========================================================
+   common.css  -  styles used by EVERY page.
+   Page-only styles live in static/css/pages/<page>.css
+   ========================================================== */
+
+/* ---------- 1. Colours and font (change here, changes everywhere) ---------- */
+:root {
+  --ink: #14213d;        /* text, navbar, footer */
+  --muted: #4b5563;      /* small grey text */
+  --page: #f6f8fa;       /* page background */
+  --white: #ffffff;
+  --line: #d5dbe3;       /* borders */
+  --brand: #0b7a75;      /* buttons and links */
+  --brand-dark: #075e5a;
+  --highlight: #ffb703;  /* focus outline */
+  --danger: #b42318;
+}
+
+/* ---------- 2. Base ---------- */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Atkinson Hyperlegible", "Segoe UI", Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--page);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 { font-size: 2rem; margin: 0 0 0.75rem; line-height: 1.2; }
+h2 { font-size: 1.4rem; margin: 1.5rem 0 0.5rem; }
+h3 { font-size: 1.1rem; margin: 0 0 0.4rem; }
+p  { margin: 0 0 1rem; }
+a  { color: var(--brand); }
+img { max-width: 100%; height: auto; }
+
+@media (min-width: 900px) {
+  h1 { font-size: 2.5rem; }
+}
+
+/* ---------- 3. Accessibility ---------- */
+/* clear outline when using the keyboard */
+a:focus, button:focus, input:focus, select:focus, textarea:focus, summary:focus {
+  outline: 3px solid var(--highlight);
+  outline-offset: 2px;
+}
+/* "Skip to content" link, only visible when tabbed to */
+.skip-link {
+  position: absolute; left: 0.5rem; top: -4rem;
+  background: var(--highlight); color: var(--ink);
+  padding: 0.6rem 1rem; font-weight: bold;
+}
+.skip-link:focus { top: 0.5rem; }
+
+/* ---------- 4. Page layout ---------- */
+main {
+  flex: 1;                   /* pushes the footer to the bottom */
+  width: 100%;
+  max-width: 1100px;         /* content never gets too wide */
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2.5rem;
+}
+
+/* ---------- 5. Navbar ---------- */
+header { background: var(--ink); }
+.navbar {
+  max-width: 1100px; margin: 0 auto; padding: 0.7rem 1rem;
+  display: flex; flex-wrap: wrap;           /* wraps onto 2 lines on small phones */
+  align-items: center; justify-content: space-between; gap: 0.5rem;
+}
+.brand { color: var(--white); font-size: 1.4rem; font-weight: bold; text-decoration: none; }
+.navbar ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.navbar ul a { color: var(--white); text-decoration: none; padding: 0.5rem 0.8rem; border-radius: 6px; display: block; }
+.navbar ul a:hover { background: rgba(255, 255, 255, 0.15); }
+.navbar ul a.active { background: rgba(255, 255, 255, 0.25); font-weight: bold; }
+
+/* ---------- 6. Footer ---------- */
+footer { background: var(--ink); color: #e5e9f0; text-align: center; padding: 1.2rem 1rem; }
+footer p { margin: 0; }
+
+/* ---------- 7. Buttons ---------- */
+.btn {
+  display: inline-block; font: inherit; font-weight: bold; text-decoration: none; cursor: pointer;
+  background: var(--brand); color: var(--white);
+  border: 2px solid var(--brand); border-radius: 6px;
+  padding: 0.6rem 1.2rem; min-height: 44px;
+}
+.btn:hover { background: var(--brand-dark); border-color: var(--brand-dark); }
+.btn-outline { background: transparent; color: var(--brand); }
+.btn-outline:hover { background: var(--brand); color: var(--white); }
+.btn-danger { background: var(--danger); border-color: var(--danger); }
+.btn-small { padding: 0.3rem 0.9rem; min-height: 36px; }
+
+/* ---------- 8. Forms ---------- */
+.form { display: grid; gap: 1rem; }
+.field { display: grid; gap: 0.3rem; }
+label, legend { font-weight: bold; }
+input[type="text"], input[type="email"], input[type="password"], select, textarea {
+  font: inherit; color: var(--ink); background: var(--white);
+  border: 2px solid #8a94a3; border-radius: 6px;
+  padding: 0.55rem 0.75rem; width: 100%; min-height: 44px;
+}
+textarea { min-height: 7rem; resize: vertical; }
+fieldset { border: 2px solid var(--line); border-radius: 6px; padding: 0.8rem 1rem; margin: 0; }
+input[type="checkbox"], input[type="radio"] { width: 1.2rem; height: 1.2rem; accent-color: var(--brand); }
+.inline { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+.inline label { font-weight: normal; display: flex; gap: 0.4rem; align-items: center; }
+.hint { color: var(--muted); font-size: 0.9rem; margin: 0; }
+
+/* message shown after an action (success or error) */
+.message { margin: 0; font-weight: bold; color: var(--brand-dark); }
+.message.error { color: var(--danger); }
+
+/* ---------- 9. Cards, grids, lists ---------- */
+.card { background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 1.2rem; }
+/* as many columns as fit: 3 on desktop, 2 on tablet, 1 on phone */
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+.empty { text-align: center; color: var(--muted); padding: 2rem 1rem; border: 2px dashed var(--line); border-radius: 8px; }
+
+/* ---------- 10. Status badges ---------- */
+.badge { display: inline-block; padding: 0.1rem 0.7rem; border-radius: 999px; font-size: 0.9rem; font-weight: bold; border: 2px solid currentColor; }
+.badge-pending, .badge-new { color: #8a5300; background: #fff4e0; }
+.badge-in_progress, .badge-reviewed { color: var(--brand-dark); background: #e0f4f2; }
+.badge-resolved, .badge-implemented { color: #1b7f3b; background: #e3f5e8; }
+
+/* ---------- 11. Tables ---------- */
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: var(--white); }
+th, td { text-align: left; padding: 0.7rem; border-bottom: 1px solid var(--line); }
+th { background: #eaeff5; }
+/* On phones every table row turns into a small card (each td shows its data-label) */
+@media (max-width: 640px) {
+  thead { display: none; }
+  tr { display: block; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 1rem; background: var(--white); }
+  td { display: flex; justify-content: space-between; gap: 1rem; }
+  td::before { content: attr(data-label); font-weight: bold; }
+}
+
+/* ---------- 12. Respect users who turn animations off ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

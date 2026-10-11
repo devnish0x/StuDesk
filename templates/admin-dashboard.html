@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin dashboard - StuDesk</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="/static/css/common.css">
+  <link rel="stylesheet" href="/static/css/pages/admin-dashboard.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <nav class="navbar">
+      <a class="brand" href="/">StuDesk</a>
+      <ul>
+        <li><a class="active" href="/admin-dashboard.html">Dashboard</a></li>
+        <li><a href="/admin-feedback.html">Feedback</a></li>
+        <li><a href="/admin-manage.html">Manage</a></li>
+        <li><a href="/login.html" onclick="logout()">Log out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>Admin dashboard</h1>
+
+    <section>
+      <h2>Complaints</h2>
+      <div class="grid" id="stat-cards"></div>
+    </section>
+
+    <section>
+      <h2>Complaints by department</h2>
+      <div id="dept-bars" class="card"></div>
+    </section>
+
+    <section>
+      <h2>Feedback and model</h2>
+      <div class="grid" id="other-cards"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>StuDesk: complaints and feedback for our campus. MCA Web Technology mini project.</p>
+  </footer>
+
+  <script src="/static/js/common.js"></script>
+  <script src="/static/js/pages/admin-dashboard.js"></script>
+</body>
+</html>

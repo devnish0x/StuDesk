@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complaint - StuDesk</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="/static/css/common.css">
+  <link rel="stylesheet" href="/static/css/pages/complaint-detail.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <nav class="navbar">
+      <a class="brand" href="/">StuDesk</a>
+      <ul>
+        <li><a href="/login.html" onclick="logout()">Log out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <p><a id="back-link" href="/">&larr; Back to list</a></p>
+
+    <article id="complaint" class="card"></article>
+
+    <section>
+      <h2>Replies</h2>
+      <ul id="replies" class="list"></ul>
+    </section>
+
+    <section id="staff-section" hidden>
+      <h2>Staff actions</h2>
+      <div class="actions">
+        <form id="status-form" class="form card">
+          <h3>Change status</h3>
+          <div class="field">
+            <label for="new-status">Status</label>
+            <select id="new-status">
+              <option value="pending">Pending</option>
+              <option value="in_progress">In progress</option>
+              <option value="resolved">Resolved</option>
+            </select>
+          </div>
+          <button class="btn" type="submit">Update status</button>
+        </form>
+
+        <form id="reply-form" class="form card">
+          <h3>Reply to the student</h3>
+          <div class="field">
+            <label for="reply">Your reply</label>
+            <textarea id="reply" required minlength="2"></textarea>
+          </div>
+          <button class="btn" type="submit">Send reply</button>
+        </form>
+
+        <form id="reroute-form" class="form card">
+          <h3>Wrong department?</h3>
+          <div class="field">
+            <label for="new-department">Move to</label>
+            <select id="new-department"></select>
+          </div>
+          <button class="btn btn-outline" type="submit">Re-route</button>
+        </form>
+      </div>
+      <p id="form-message" class="message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>StuDesk: complaints and feedback for our campus. MCA Web Technology mini project.</p>
+  </footer>
+
+  <script src="/static/js/common.js"></script>
+  <script src="/static/js/pages/complaint-detail.js"></script>
+</body>
+</html>

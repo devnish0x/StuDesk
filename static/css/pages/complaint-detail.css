@@ -1,0 +1,22 @@
+/* complaint-detail.css - Complaint Detail page only */
+
+#complaint h1 { font-size: 1.7rem; }
+
+/* each reply looks like a message with a coloured edge */
+#replies li {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--brand);
+  border-radius: 8px;
+  padding: 1rem;
+}
+#replies p { margin: 0 0 0.4rem; }
+
+/* three staff forms: in a row on desktop, stacked on phones */
+.actions {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: start;
+  margin-bottom: 1rem;
+}

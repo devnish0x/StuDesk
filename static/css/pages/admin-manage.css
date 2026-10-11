@@ -1,0 +1,18 @@
+/* admin-manage.css - Manage Users and Departments page only */
+
+.sub-heading { margin-top: 2rem; }
+
+/* forms stay a sensible width */
+#staff-form, #dept-form { max-width: 36rem; }
+
+/* each department is one row: name on the left, Remove button on the right */
+.dept-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.dept-item p { margin: 0; }
+
+td { overflow-wrap: anywhere; }

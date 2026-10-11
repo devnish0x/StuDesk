@@ -1,0 +1,9 @@
+/* login.css - Login / Register page only */
+
+/* two forms side by side on desktop, stacked on phones */
+.auth-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: start;
+}
+
+.demo-note { margin-bottom: 1.5rem; }

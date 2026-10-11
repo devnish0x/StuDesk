@@ -1,0 +1,12 @@
+/* submit.css - Submit Complaint page only */
+
+/* keep the form a comfortable reading width on big screens */
+#complaint-form { max-width: 40rem; }
+
+/* the line that shows what the model suggested */
+.suggestion { min-height: 1.5rem; }
+
+/* on phones the two buttons share the full width */
+@media (max-width: 480px) {
+  #complaint-form .btn { width: 100%; }
+}

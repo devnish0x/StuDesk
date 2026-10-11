@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage - StuDesk</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="/static/css/common.css">
+  <link rel="stylesheet" href="/static/css/pages/admin-manage.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <nav class="navbar">
+      <a class="brand" href="/">StuDesk</a>
+      <ul>
+        <li><a href="/admin-dashboard.html">Dashboard</a></li>
+        <li><a href="/admin-feedback.html">Feedback</a></li>
+        <li><a class="active" href="/admin-manage.html">Manage</a></li>
+        <li><a href="/login.html" onclick="logout()">Log out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>Manage users and departments</h1>
+    <p id="page-message" class="message"></p>
+
+    <section>
+      <h2>Users</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Department</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody id="user-rows"></tbody>
+        </table>
+      </div>
+
+      <h3 class="sub-heading">Add a staff member</h3>
+      <form id="staff-form" class="form card">
+        <div class="field">
+          <label for="staff-name">Name</label>
+          <input type="text" id="staff-name" required minlength="2">
+        </div>
+        <div class="field">
+          <label for="staff-email">Email</label>
+          <input type="email" id="staff-email" required>
+        </div>
+        <div class="field">
+          <label for="staff-password">Password</label>
+          <input type="password" id="staff-password" required minlength="6">
+        </div>
+        <div class="field">
+          <label for="staff-department">Department</label>
+          <select id="staff-department" required></select>
+        </div>
+        <button class="btn" type="submit">Add staff</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Departments</h2>
+      <ul id="dept-list" class="list"></ul>
+
+      <h3 class="sub-heading">Add a department</h3>
+      <form id="dept-form" class="form card">
+        <div class="field">
+          <label for="dept-name">Department name</label>
+          <input type="text" id="dept-name" required minlength="2">
+        </div>
+        <div class="field">
+          <label for="dept-description">Short description (optional)</label>
+          <input type="text" id="dept-description" maxlength="120">
+        </div>
+        <button class="btn" type="submit">Add department</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>StuDesk: complaints and feedback for our campus. MCA Web Technology mini project.</p>
+  </footer>
+
+  <script src="/static/js/common.js"></script>
+  <script src="/static/js/pages/admin-manage.js"></script>
+</body>
+</html>

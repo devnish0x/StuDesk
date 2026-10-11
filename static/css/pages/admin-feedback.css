@@ -1,0 +1,23 @@
+/* admin-feedback.css - Feedback Review page only */
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.filter-bar .field { min-width: 12rem; }
+
+/* each feedback item is a card with the reply form inside it */
+.review-card h2 { margin-top: 0; font-size: 1.25rem; }
+.review-meta { color: var(--muted); font-size: 0.9rem; }
+
+/* reply box and status select side by side on desktop */
+.review-form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+@media (min-width: 700px) {
+  .review-form { grid-template-columns: 2fr 1fr auto; align-items: end; }
+}

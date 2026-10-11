@@ -1,9 +1,30 @@
-/* Home page only (Module 1) */
-.hero { display: grid; gap: var(--space-3); align-items: start; padding: var(--space-3) 0 var(--space-4); }
-@media (min-width: 960px) { .hero { grid-template-columns: 1.1fr 1fr; } }
+/* index.css - Home page only */
+
+/* hero: 1 column on phones, 2 columns on desktop */
+.hero {
+  display: grid;
+  gap: 1.5rem;
+  align-items: start;
+  padding: 1rem 0 2rem;
+}
+
+@media (min-width: 900px) {
+  .hero { grid-template-columns: 1.1fr 1fr; }
+}
+
+/* the "Try the router" box gets a yellow edge so it stands out */
 .demo { border-left: 6px solid var(--highlight); }
-.steps { list-style: none; padding: 0; margin: 0; }
-.faq-btn { font: inherit; font-weight: 700; background: none; border: 0; padding: 0; cursor: pointer; color: var(--ink); text-align: left; width: 100%; }
-.faq-btn::after { content: "+"; float: right; }
-.faq-btn[aria-expanded="true"]::after { content: "\2212"; }
-.faq .card p { margin: var(--space-1) 0 0; }
+
+/* "How it works" steps: plain list without bullets */
+.steps { list-style: none; margin: 0; padding: 0; }
+
+/* FAQ uses <details> and <summary>, which open and close without JavaScript */
+.faq details {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.6rem;
+}
+.faq summary { font-weight: bold; cursor: pointer; }
+.faq details p { margin: 0.6rem 0 0; }

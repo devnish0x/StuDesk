@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback review - StuDesk</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="/static/css/common.css">
+  <link rel="stylesheet" href="/static/css/pages/admin-feedback.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <nav class="navbar">
+      <a class="brand" href="/">StuDesk</a>
+      <ul>
+        <li><a href="/admin-dashboard.html">Dashboard</a></li>
+        <li><a class="active" href="/admin-feedback.html">Feedback</a></li>
+        <li><a href="/admin-manage.html">Manage</a></li>
+        <li><a href="/login.html" onclick="logout()">Log out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>Feedback and suggestions</h1>
+
+    <div class="filter-bar">
+      <div class="field">
+        <label for="filter-type">Type</label>
+        <select id="filter-type">
+          <option value="all">All</option>
+          <option value="feedback">Feedback</option>
+          <option value="suggestion">Suggestion</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="filter-status">Status</label>
+        <select id="filter-status">
+          <option value="all">All</option>
+          <option value="new">New</option>
+          <option value="reviewed">Reviewed</option>
+          <option value="implemented">Implemented</option>
+        </select>
+      </div>
+    </div>
+
+    <p id="page-message" class="message"></p>
+    <ul id="feedback-list" class="list"></ul>
+    <p id="empty-message" class="empty" hidden>Nothing matches these filters.</p>
+  </main>
+
+  <footer>
+    <p>StuDesk: complaints and feedback for our campus. MCA Web Technology mini project.</p>
+  </footer>
+
+  <script src="/static/js/common.js"></script>
+  <script src="/static/js/pages/admin-feedback.js"></script>
+</body>
+</html>

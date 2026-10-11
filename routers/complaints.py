@@ -21,6 +21,12 @@ class ComplaintIn(BaseModel):
     department: str | None = None   # set only if the student overrides the suggestion
 
 
+@router.get("/departments")
+def list_departments():
+    """Public: the dropdowns on the pages need the department names."""
+    return read_json("departments.json")
+
+
 @router.post("/predict")
 def predict_department(data: PredictIn):
     """Public on purpose, so the home page can show a live demo."""
@@ -31,6 +37,9 @@ def predict_department(data: PredictIn):
 @router.post("/complaints")
 def submit_complaint(data: ComplaintIn, user=Depends(require_role("student"))):
     predicted, confidence = predict(data.title + ". " + data.description)
+    chosen = data.department or predicted
+    if chosen not in [d["id"] for d in read_json("departments.json")]:
+        raise HTTPException(400, "That department does not exist.")
     complaints = read_json("complaints.json")
     complaint = {
         "id": new_id("c", complaints),
@@ -38,7 +47,7 @@ def submit_complaint(data: ComplaintIn, user=Depends(require_role("student"))):
         "title": data.title.strip(),
         "description": data.description.strip(),
         "predicted_department": predicted,
-        "department": data.department or predicted,
+        "department": chosen,
         "confidence": confidence,
         "status": "pending",
         "priority": "normal",

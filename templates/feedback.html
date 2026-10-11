@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - StuDesk</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="/static/css/common.css">
+  <link rel="stylesheet" href="/static/css/pages/feedback.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <nav class="navbar">
+      <a class="brand" href="/">StuDesk</a>
+      <ul>
+        <li><a href="/submit.html">New complaint</a></li>
+        <li><a href="/my-complaints.html">My complaints</a></li>
+        <li><a class="active" href="/feedback.html">Feedback</a></li>
+        <li><a href="/login.html" onclick="logout()">Log out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>Feedback and suggestions</h1>
+    <p>Tell us what is working well, or what we could improve.</p>
+
+    <form id="feedback-form" class="form card">
+      <div class="field">
+        <label for="type">This is a</label>
+        <select id="type">
+          <option value="feedback">Feedback</option>
+          <option value="suggestion">Suggestion</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="category">About</label>
+        <select id="category">
+          <option value="hostel">Hostel</option>
+          <option value="library">Library</option>
+          <option value="academics">Academics</option>
+          <option value="canteen">Canteen</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="title">Title</label>
+        <input type="text" id="title" required minlength="3" maxlength="120">
+      </div>
+      <div class="field">
+        <label for="message">Your message</label>
+        <textarea id="message" required minlength="10" maxlength="1500"></textarea>
+        <p class="hint"><span id="char-count">0</span> / 1500 characters</p>
+      </div>
+      <fieldset>
+        <legend>Rating (for feedback only)</legend>
+        <div class="inline rating">
+          <label><input type="radio" name="rating" value="1"> 1</label>
+          <label><input type="radio" name="rating" value="2"> 2</label>
+          <label><input type="radio" name="rating" value="3"> 3</label>
+          <label><input type="radio" name="rating" value="4"> 4</label>
+          <label><input type="radio" name="rating" value="5"> 5</label>
+        </div>
+      </fieldset>
+      <label class="inline"><input type="checkbox" id="anonymous"> Send anonymously (admins will not see my name)</label>
+      <button class="btn" type="submit">Send</button>
+      <p id="form-message" class="message"></p>
+    </form>
+
+    <h2>Your submissions</h2>
+    <ul id="my-feedback" class="list"></ul>
+    <p id="empty-message" class="empty" hidden>You have not sent any feedback yet.</p>
+  </main>
+
+  <footer>
+    <p>StuDesk: complaints and feedback for our campus. MCA Web Technology mini project.</p>
+  </footer>
+
+  <script src="/static/js/common.js"></script>
+  <script src="/static/js/pages/feedback.js"></script>
+</body>
+</html>

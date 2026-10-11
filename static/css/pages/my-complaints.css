@@ -1,0 +1,9 @@
+/* my-complaints.css - My Complaints page only */
+
+.filter-bar {
+  max-width: 16rem;
+  margin-bottom: 1rem;
+}
+
+/* long complaint titles should wrap instead of stretching the table */
+td { overflow-wrap: anywhere; }

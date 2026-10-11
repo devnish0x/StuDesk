@@ -1,0 +1,17 @@
+/* feedback.css - Feedback and Suggestions page only */
+
+#feedback-form { max-width: 40rem; margin-bottom: 2rem; }
+
+/* rating radios sit in one row and are easy to tap */
+.rating { gap: 1.5rem; }
+.rating label { font-size: 1.1rem; }
+
+/* each past submission */
+#my-feedback h3 { margin-bottom: 0.2rem; }
+#my-feedback p { margin-bottom: 0.5rem; }
+.reply-box {
+  background: #eef7f6;
+  border-left: 4px solid var(--brand);
+  padding: 0.6rem 0.8rem;
+  border-radius: 4px;
+}

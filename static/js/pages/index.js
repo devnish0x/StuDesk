@@ -1,23 +1,17 @@
-/* Home page (Module 1) */
+// index.js - Home page.
+// The "Try the router" box: sends the text to /api/predict and shows the department.
 
-// Live demo: calls the same /api/predict that the Submit page uses
-document.getElementById("demo-form").addEventListener("submit", async (event) => {
-  event.preventDefault();
-  const result = document.getElementById("demo-result");
-  result.textContent = "Checking...";
+document.getElementById("demo-form").addEventListener("submit", async function (event) {
+  event.preventDefault();   // stop the page from reloading
+
+  const text = document.getElementById("demo-text").value;
+
   try {
-    const data = await api("/predict", { method: "POST", body: { text: document.getElementById("demo-text").value } });
-    result.textContent = "This would go to: " + data.department.toUpperCase() + " (confidence " + Math.round(data.confidence * 100) + "%)";
+    await loadDepartments();                                   // so we can show the department's full name
+    const result = await api("/predict", "POST", { text: text });
+    const percent = Math.round(result.confidence * 100);
+    showMessage("demo-result", "This would go to: " + deptName(result.department) + " (" + percent + "% sure)");
   } catch (error) {
-    result.textContent = error.message;
+    showMessage("demo-result", error.message, true);
   }
-});
-
-// FAQ accordion: each button shows or hides the paragraph it controls
-document.querySelectorAll(".faq-btn").forEach((button) => {
-  button.addEventListener("click", () => {
-    const open = button.getAttribute("aria-expanded") === "true";
-    button.setAttribute("aria-expanded", String(!open));
-    document.getElementById(button.getAttribute("aria-controls")).hidden = open;
-  });
 });
