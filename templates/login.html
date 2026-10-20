@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Log in - StuDesk</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
   <link rel="stylesheet" href="/static/css/common.css">
   <link rel="stylesheet" href="/static/css/pages/login.css">
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
@@ -23,41 +26,56 @@
 
   <main id="main">
     <h1>Welcome to StuDesk</h1>
-    <p class="hint demo-note">Demo logins (password studesk123): asha@college.edu (student), it@college.edu (staff), admin@college.edu (admin)</p>
+    <p class="hint demo-note">Demo logins (password studesk123): asha@college.edu (student), it@college.edu (staff),
+      admin@college.edu (admin)</p>
 
-    <div class="grid auth-grid">
-      <form id="login-form" class="card form">
-        <h2>Log in</h2>
-        <div class="field">
-          <label for="login-email">Email</label>
-          <input type="email" id="login-email" required>
+    <div class="flip-card">
+      <div class="flip-card-inner" id="flip-card-inner">
+        <!-- Front side: Login form -->
+        <div class="flip-card-front">
+          <form id="login-form" class="card form">
+            <h2>Log in</h2>
+            <div class="field">
+              <label for="login-email">Email</label>
+              <input type="email" id="login-email" required>
+            </div>
+            <div class="field">
+              <label for="login-password">Password</label>
+              <input type="password" id="login-password" required>
+            </div>
+            <p id="login-message" class="message"></p>
+            <button class="btn" type="submit">Log in</button>
+            <p class="flip-link">
+              Don't have an account? <a href="#" id="show-register">Create one</a>
+            </p>
+          </form>
         </div>
-        <div class="field">
-          <label for="login-password">Password</label>
-          <input type="password" id="login-password" required>
-        </div>
-        <p id="login-message" class="message"></p>
-        <button class="btn" type="submit">Log in</button>
-      </form>
 
-      <form id="register-form" class="card form">
-        <h2>New student? Register</h2>
-        <div class="field">
-          <label for="reg-name">Full name</label>
-          <input type="text" id="reg-name" required minlength="2">
+        <!-- Back side: Registration form -->
+        <div class="flip-card-back">
+          <form id="register-form" class="card form">
+            <h2>New student? Register</h2>
+            <div class="field">
+              <label for="reg-name">Full name</label>
+              <input type="text" id="reg-name" required minlength="2">
+            </div>
+            <div class="field">
+              <label for="reg-email">Email</label>
+              <input type="email" id="reg-email" required>
+            </div>
+            <div class="field">
+              <label for="reg-password">Password</label>
+              <input type="password" id="reg-password" required minlength="6">
+              <p class="hint">At least 6 characters.</p>
+            </div>
+            <p id="register-message" class="message"></p>
+            <button class="btn btn-outline" type="submit">Create account</button>
+            <p class="flip-link">
+              Already have an account? <a href="#" id="show-login">Log in</a>
+            </p>
+          </form>
         </div>
-        <div class="field">
-          <label for="reg-email">Email</label>
-          <input type="email" id="reg-email" required>
-        </div>
-        <div class="field">
-          <label for="reg-password">Password</label>
-          <input type="password" id="reg-password" required minlength="6">
-          <p class="hint">At least 6 characters.</p>
-        </div>
-        <p id="register-message" class="message"></p>
-        <button class="btn btn-outline" type="submit">Create account</button>
-      </form>
+      </div>
     </div>
   </main>
 
@@ -68,4 +86,5 @@
   <script src="/static/js/common.js"></script>
   <script src="/static/js/pages/login.js"></script>
 </body>
+
 </html>
