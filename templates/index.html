@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - StuDesk</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
   <link rel="stylesheet" href="/static/css/common.css">
   <link rel="stylesheet" href="/static/css/pages/index.css">
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
@@ -16,61 +19,143 @@
       <a class="brand" href="/">StuDesk</a>
       <ul>
         <li><a class="active" href="/">Home</a></li>
-        <li><a href="/login.html">Log in</a></li>
+        <li><a class="btn btn-small" href="/login.html">Log in</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div>
-        <h1>Tell us what's wrong. We'll send it to the right desk.</h1>
-        <p>StuDesk reads your complaint, suggests the department that should handle it, and lets you follow it until it is fixed. Have an idea instead? Send feedback or a suggestion.</p>
-        <p><a class="btn" href="/login.html">Get started</a></p>
-      </div>
 
-      <form id="demo-form" class="card demo form">
-        <h2>Try the router</h2>
-        <div class="field">
-          <label for="demo-text">Describe a problem</label>
-          <textarea id="demo-text" required minlength="3" placeholder="Example: the Wi-Fi in the computer lab is very slow"></textarea>
-        </div>
-        <button class="btn" type="submit">Find the department</button>
-        <p id="demo-result" class="message"></p>
-      </form>
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Your Campus Concerns. Heard and Tracked.</h1>
+      <p>StuDesk gives students a simple way to report campus issues, track complaint progress, and share feedback
+        and suggestions — all through one organized platform.</p>
+      <div class="hero-actions">
+        <a class="btn" href="/login.html">Log in to StuDesk</a>
+        <a class="btn btn-outline" href="#how-it-works">How It Works</a>
+      </div>
     </section>
 
-    <section>
-      <h2>How it works</h2>
+    <!-- How It Works -->
+    <section id="how-it-works">
+      <h2>How It Works</h2>
+      <p class="section-lead">Your complaint follows a clear, structured path from submission to resolution.</p>
       <ol class="grid steps">
-        <li class="card"><h3>Write it down</h3><p>Describe the problem in your own words.</p></li>
-        <li class="card"><h3>We route it</h3><p>The model suggests a department. You can change it.</p></li>
-        <li class="card"><h3>Track it</h3><p>See replies and status updates under My complaints.</p></li>
+        <li class="card step-card">
+          <p class="step-num">1</p>
+          <h3>Submit a Complaint</h3>
+          <p>Describe your campus-related issue and submit it through StuDesk.</p>
+        </li>
+        <li class="card step-card">
+          <p class="step-num">2</p>
+          <h3>Complaint Review</h3>
+          <p>The complaint is reviewed and directed to the appropriate department.</p>
+        </li>
+        <li class="card step-card">
+          <p class="step-num">3</p>
+          <h3>Department Action</h3>
+          <p>Department staff review the complaint, take action, and update its status.</p>
+        </li>
+        <li class="card step-card">
+          <p class="step-num">4</p>
+          <h3>Track and Feedback</h3>
+          <p>Monitor your complaint's progress and share feedback about your experience.</p>
+        </li>
       </ol>
     </section>
 
-    <section class="faq">
-      <h2>Questions students ask</h2>
+    <!-- Features -->
+    <section id="features" class="alt-bg">
+      <h2>Platform Features</h2>
+      <p class="section-lead">Everything you need to report, track, and follow up on campus concerns.</p>
+      <ul class="grid features-grid">
+        <li class="card">
+          <h3>Complaint Submission</h3>
+          <p>Submit campus-related concerns through a clear, organized form.</p>
+        </li>
+        <li class="card">
+          <h3>Complaint Tracking</h3>
+          <p>View the current status and progress of your submitted complaints.</p>
+        </li>
+        <li class="card">
+          <h3>Department Management</h3>
+          <p>Staff can review complaints assigned to them and update their status.</p>
+        </li>
+        <li class="card">
+          <h3>Student Feedback</h3>
+          <p>Share feedback after a complaint is handled to improve the process.</p>
+        </li>
+        <li class="card">
+          <h3>Suggestions</h3>
+          <p>Submit ideas to improve campus facilities and student services.</p>
+        </li>
+        <li class="card">
+          <h3>Centralized Platform</h3>
+          <p>All complaint activity is organized in one place for students and staff.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+      <h2>Frequently Asked Questions</h2>
       <details>
-        <summary>Is my feedback anonymous?</summary>
-        <p>Yes, if you tick the anonymous box. Admins will not see your name, but you can still find your own submissions.</p>
+        <summary>What is StuDesk?</summary>
+        <p>StuDesk is a campus complaint management platform. Students can report issues, track progress, and share
+          feedback — all in one place.</p>
       </details>
       <details>
-        <summary>What if the department is wrong?</summary>
-        <p>Staff can move your complaint to the right department, so you do not need to submit it again.</p>
+        <summary>How do I submit a complaint?</summary>
+        <p>Log in with your student account, fill in the complaint form with a description of the issue, and submit.
+          It will then be reviewed and directed to the right department.</p>
       </details>
       <details>
-        <summary>Who can see my complaint?</summary>
-        <p>Only you, the staff of the department it is assigned to, and the admin.</p>
+        <summary>How can I track my complaint?</summary>
+        <p>Go to "My Complaints" after logging in. Each complaint shows its current status — Pending, In Progress, or
+          Resolved.</p>
+      </details>
+      <details>
+        <summary>Who handles submitted complaints?</summary>
+        <p>The relevant department staff handle complaints, overseen by the platform admin. Only you, the assigned
+          department staff, and the admin can see your complaint.</p>
+      </details>
+      <details>
+        <summary>How can I submit feedback or suggestions?</summary>
+        <p>After logging in, use the Feedback section to rate a resolved complaint, or use Suggestions to share ideas
+          for improving campus services.</p>
       </details>
     </section>
+
+    <!-- Final CTA -->
+    <section class="cta">
+      <h2>Ready to Report an Issue?</h2>
+      <p>Log in to StuDesk and submit your campus concern. No follow-up chasing required.</p>
+      <a class="btn" href="/login.html">Log in to StuDesk</a>
+    </section>
+
   </main>
 
   <footer>
-    <p>StuDesk: complaints and feedback for our campus. MCA Web Technology mini project.</p>
+    <div class="footer-inner">
+      <div>
+        <strong>StuDesk</strong>
+        <p>Campus complaint management for students and staff.</p>
+        <p class="hint">MCA Web Technology mini project.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="/login.html">Log in</a></li>
+        </ul>
+      </nav>
+    </div>
   </footer>
 
   <script src="/static/js/common.js"></script>
   <script src="/static/js/pages/index.js"></script>
 </body>
+
 </html>

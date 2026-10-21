@@ -1,24 +1,64 @@
-/* index.css - Home page only */
+/* index.css — Landing page only.
+   Common styles (navbar, cards, badges, buttons, grid) are in common.css.
+   This file only adds what is unique to the landing page. */
 
-/* hero: 1 column on phones, 2 columns on desktop */
+/* ---- Hero section ---- */
 .hero {
-  display: grid;
-  gap: 1.5rem;
-  align-items: start;
-  padding: 1rem 0 2rem;
+  padding: 2rem 0;
 }
 
-@media (min-width: 900px) {
-  .hero { grid-template-columns: 1.1fr 1fr; }
+.hero h1 {
+  margin-bottom: 1rem;
 }
 
-/* the "Try the router" box gets a yellow edge so it stands out */
-.demo { border-left: 6px solid var(--highlight); }
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
 
-/* "How it works" steps: plain list without bullets */
-.steps { list-style: none; margin: 0; padding: 0; }
 
-/* FAQ uses <details> and <summary>, which open and close without JavaScript */
+
+/* ---- Section intro text ---- */
+.section-lead {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+/* ---- How It Works steps ---- */
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: none; /* numbers come from .step-num */
+}
+
+.step-card {
+  text-align: center;
+}
+
+.step-num {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--brand);
+  margin: 0 0 0.5rem;
+}
+
+/* ---- Alternate background for features section ---- */
+.alt-bg {
+  background: #eef1f6;
+  padding: 2rem 0;
+  border-radius: 8px;
+}
+
+.features-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- FAQ uses <details> and <summary> — no JavaScript needed ---- */
 .faq details {
   background: var(--white);
   border: 1px solid var(--line);
@@ -26,5 +66,62 @@
   padding: 0.8rem 1rem;
   margin-bottom: 0.6rem;
 }
-.faq summary { font-weight: bold; cursor: pointer; }
-.faq details p { margin: 0.6rem 0 0; }
+
+.faq summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.faq details p {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+}
+
+/* ---- Final CTA ---- */
+.cta {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.cta h2 {
+  margin-bottom: 0.5rem;
+}
+
+.cta p {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+/* ---- Footer inner layout ---- */
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-inner p {
+  margin: 0.3rem 0 0;
+  font-size: 0.9rem;
+}
+
+footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+footer nav a {
+  color: #e5e9f0;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}

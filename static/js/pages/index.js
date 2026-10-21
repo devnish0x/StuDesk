@@ -1,17 +1,12 @@
-// index.js - Home page.
-// The "Try the router" box: sends the text to /api/predict and shows the department.
+// index.js — Landing page only.
+// The FAQ uses <details>/<summary> which works without JavaScript.
+// This file only adds smooth scrolling for the nav anchor links.
 
-document.getElementById("demo-form").addEventListener("submit", async function (event) {
-  event.preventDefault();   // stop the page from reloading
-
-  const text = document.getElementById("demo-text").value;
-
-  try {
-    await loadDepartments();                                   // so we can show the department's full name
-    const result = await api("/predict", "POST", { text: text });
-    const percent = Math.round(result.confidence * 100);
-    showMessage("demo-result", "This would go to: " + deptName(result.department) + " (" + percent + "% sure)");
-  } catch (error) {
-    showMessage("demo-result", error.message, true);
-  }
+document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+  link.addEventListener("click", function (event) {
+    var target = document.querySelector(link.getAttribute("href"));
+    if (!target) return;
+    event.preventDefault();
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
 });
