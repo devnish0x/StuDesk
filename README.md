@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/photo.png" alt="Project Photo" width="300">
+  <img src="images/photo.jpeg" alt="Project Photo" width="300">
 </p>
 
 # StuDesk
