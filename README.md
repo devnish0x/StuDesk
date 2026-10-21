@@ -58,11 +58,6 @@ studesk/
 2. The page's JS calls the backend with `api("/...")` (this uses `fetch` and sends the token).
 3. The JS puts the answer into the page with `innerHTML`.
 
-## Connect your own ML model
-Edit `MODEL_URL` and the two lines marked `>>> ADJUST` in `model/predictor.py`.
-Your model's department names must be: hostel, exam, fees, library, it, academics
-(or change the ids in seed.py). If the model is off, a keyword fallback is used.
-
 ## Good to know
 - Tokens live in memory: restarting the server logs everyone out (the pages send you back to login).
 - The token is saved in sessionStorage, so each browser tab has its own login. This makes it easy to test student, staff and admin in different tabs.
