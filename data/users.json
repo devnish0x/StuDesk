@@ -3,7 +3,7 @@
     "id": "u1",
     "name": "Admin",
     "email": "admin@college.edu",
-    "password_hash": "d58ae7d701f0c7c9$38d46d591a06c6e17c2853f2b12b005d0d14985a77403e3ebcfe9964c853c3d1",
+    "password_hash": "c237d2904ccf0eff$feb4b4654e78273d1d70850a0a64fa7e21e02667f33e724d7839e4402bb451b2",
     "role": "admin",
     "department": null
   },
@@ -11,7 +11,7 @@
     "id": "u2",
     "name": "Hostel Staff",
     "email": "hostel@college.edu",
-    "password_hash": "d58ae7d701f0c7c9$38d46d591a06c6e17c2853f2b12b005d0d14985a77403e3ebcfe9964c853c3d1",
+    "password_hash": "c237d2904ccf0eff$feb4b4654e78273d1d70850a0a64fa7e21e02667f33e724d7839e4402bb451b2",
     "role": "staff",
     "department": "hostel"
   },
@@ -19,7 +19,7 @@
     "id": "u3",
     "name": "Examination Staff",
     "email": "exam@college.edu",
-    "password_hash": "d58ae7d701f0c7c9$38d46d591a06c6e17c2853f2b12b005d0d14985a77403e3ebcfe9964c853c3d1",
+    "password_hash": "c237d2904ccf0eff$feb4b4654e78273d1d70850a0a64fa7e21e02667f33e724d7839e4402bb451b2",
     "role": "staff",
     "department": "exam"
   },
@@ -27,7 +27,7 @@
     "id": "u4",
     "name": "Fees Staff",
     "email": "fees@college.edu",
-    "password_hash": "d58ae7d701f0c7c9$38d46d591a06c6e17c2853f2b12b005d0d14985a77403e3ebcfe9964c853c3d1",
+    "password_hash": "c237d2904ccf0eff$feb4b4654e78273d1d70850a0a64fa7e21e02667f33e724d7839e4402bb451b2",
     "role": "staff",
     "department": "fees"
   },
@@ -35,7 +35,7 @@
     "id": "u5",
     "name": "Library Staff",
     "email": "library@college.edu",
-    "password_hash": "d58ae7d701f0c7c9$38d46d591a06c6e17c2853f2b12b005d0d14985a77403e3ebcfe9964c853c3d1",
+    "password_hash": "c237d2904ccf0eff$feb4b4654e78273d1d70850a0a64fa7e21e02667f33e724d7839e4402bb451b2",
     "role": "staff",
     "department": "library"
   },
@@ -43,7 +43,7 @@
     "id": "u6",
     "name": "IT Services Staff",
     "email": "it@college.edu",
-    "password_hash": "d58ae7d701f0c7c9$38d46d591a06c6e17c2853f2b12b005d0d14985a77403e3ebcfe9964c853c3d1",
+    "password_hash": "c237d2904ccf0eff$feb4b4654e78273d1d70850a0a64fa7e21e02667f33e724d7839e4402bb451b2",
     "role": "staff",
     "department": "it"
   },
@@ -51,7 +51,7 @@
     "id": "u7",
     "name": "Academics Staff",
     "email": "academics@college.edu",
-    "password_hash": "d58ae7d701f0c7c9$38d46d591a06c6e17c2853f2b12b005d0d14985a77403e3ebcfe9964c853c3d1",
+    "password_hash": "c237d2904ccf0eff$feb4b4654e78273d1d70850a0a64fa7e21e02667f33e724d7839e4402bb451b2",
     "role": "staff",
     "department": "academics"
   },
@@ -59,7 +59,7 @@
     "id": "u8",
     "name": "Asha Rao",
     "email": "asha@college.edu",
-    "password_hash": "d58ae7d701f0c7c9$38d46d591a06c6e17c2853f2b12b005d0d14985a77403e3ebcfe9964c853c3d1",
+    "password_hash": "c237d2904ccf0eff$feb4b4654e78273d1d70850a0a64fa7e21e02667f33e724d7839e4402bb451b2",
     "role": "student",
     "department": null
   },
@@ -67,7 +67,7 @@
     "id": "u9",
     "name": "Ravi Kumar",
     "email": "ravi@college.edu",
-    "password_hash": "d58ae7d701f0c7c9$38d46d591a06c6e17c2853f2b12b005d0d14985a77403e3ebcfe9964c853c3d1",
+    "password_hash": "c237d2904ccf0eff$feb4b4654e78273d1d70850a0a64fa7e21e02667f33e724d7839e4402bb451b2",
     "role": "student",
     "department": null
   },
@@ -75,7 +75,7 @@
     "id": "u10",
     "name": "Meera Nair",
     "email": "meera@college.edu",
-    "password_hash": "d58ae7d701f0c7c9$38d46d591a06c6e17c2853f2b12b005d0d14985a77403e3ebcfe9964c853c3d1",
+    "password_hash": "c237d2904ccf0eff$feb4b4654e78273d1d70850a0a64fa7e21e02667f33e724d7839e4402bb451b2",
     "role": "student",
     "department": null
   }
