@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/photo.png" alt="Project Photo" width="300">
+</p>
+
 # StuDesk
 
 **A campus complaint-routing and feedback portal.** Students describe a problem, a machine learning model suggests which department should handle it, and that department's staff reply, update the status or re-route it. Students can also send feedback and suggestions, anonymously if they wish.
