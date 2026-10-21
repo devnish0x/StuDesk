@@ -389,19 +389,5 @@ StuDesk is a learning project. Being honest about its limits is part of understa
 | The page looks fine but the font looks different | The Google font could not load (offline). The fallback fonts are used, and everything still works. |
 | Data looks broken or you want a fresh start | Run `python seed.py`. |
 
-## Team and credits
-
-Web Technology mini project, MCA, Web Technologies Lab (MCA-4143), School of Computer Engineering, M.I.T., Manipal.
-
-| Name | Reg. No. | Modules |
-|---|---|---|
-| [Name 1] | [Reg. No.] | Home, Login/Register, Feedback |
-| [Name 2] | [Reg. No.] | Submit Complaint, My Complaints |
-| [Name 3] | [Reg. No.] | Department Dashboard, Complaint Detail |
-| [Name 4] | [Reg. No.] | Admin Dashboard, Feedback Review, Manage |
-
-Guided by: [Faculty Name]
-
-Font: Atkinson Hyperlegible by the Braille Institute.
 
 **License:** [Add a license if you publish this, for example MIT.]
